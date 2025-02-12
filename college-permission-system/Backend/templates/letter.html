@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Permission Letter</h2>
+<p>To Security,</p>
+<p>Please allow <strong>{{ request.student_name }}</strong> for the following reason:</p>
+<p><strong>{{ request.reason }}</strong></p>
+<p>Details: {{ request.details }}</p>
+<p>{{ request.letter }}</p>
+<p>Regards,<br>Dean</p>
+{% endblock %}

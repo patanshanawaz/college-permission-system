@@ -1,0 +1,16 @@
+Project Directory Structure
+college-permission-system/
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── student_dashboard.html
+│   ├── dean_dashboard.html
+│   ├── letter.html
+├── static/
+│   ├── css/
+│   └── js/
+├── app.py
+├── models.py
+├── database.db
+└── README.md
+

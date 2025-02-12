@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Student Dashboard</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label for="reason" class="form-label">Reason</label>
+        <select class="form-control" id="reason" name="reason" required>
+            <option value="Not Wearing Uniform">Not Wearing Uniform</option>
+            <option value="Not Wearing Shoes">Not Wearing Shoes</option>
+            <option value="Late Entry">Late Entry</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="details" class="form-label">Details</label>
+        <textarea class="form-control" id="details" name="details" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+{% endblock %}

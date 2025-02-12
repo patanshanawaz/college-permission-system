@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Dean Dashboard</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Reason</th>
+            <th>Details</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for request in requests %}
+        <tr>
+            <td>{{ request.student_name }}</td>
+            <td>{{ request.reason }}</td>
+            <td>{{ request.details }}</td>
+            <td>{{ request.status }}</td>
+            <td>
+                <form method="POST">
+                    <input type="hidden" name="request_id" value="{{ request.id }}">
+                    <textarea name="letter_content" placeholder="Issue letter if approving..." class="form-control mb-2"></textarea>
+                    <button type="submit" name="action" value="approve" class="btn btn-success">Approve</button>
+                    <button type="submit" name="action" value="reject" class="btn btn-danger">Reject</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
