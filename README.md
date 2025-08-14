@@ -39,4 +39,4 @@ A simple web application that manages permission letters for students and deans.
 
    📌 About the Developer
 
-Patan Shanawaz - B.Tech CSE  | Passionate about Software Development
+Patan Shanawaz - B.Tech CSE with Cyber Security   | Passionate about Software Development and Cloud Securtiy, DevSecOps.
