@@ -24,6 +24,17 @@ A simple web application that manages permission letters for students and deans.
 
 
 
+## Screenshots
+
+### Home Page
+![Home Page](home.png)
+
+### Student Dashboard
+![Student Dashboard](student_dashboard.png)
+
+### Dean Dashboard
+![Dean Dashboard](dean_dashboard.png)
+
 
 
    📌 About the Developer
